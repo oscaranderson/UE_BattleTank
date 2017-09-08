@@ -34,4 +34,8 @@ private:
 	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
 	
 	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
+	
+	int32 LineTraceRange = 1000000;
+
+	bool GetLookVectorHitLocation(FVector LookDirection, FVector& HitLocation) const;
 };
